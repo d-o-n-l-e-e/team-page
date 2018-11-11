@@ -1,0 +1,127 @@
+@import './configs';
+
+html {
+  box-sizing: border-box;
+  &.modal-open {
+    // overflow: hidden;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  margin: 0;
+  color: $color-black;
+  font-family: Roboto;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+.ctn {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &--flex {
+    display: flex;
+  }
+}
+
+.has-hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.12) 0px 1px 2px;
+  transition: all 0.2s cubic-bezier(0.2, 0.91, 0.85, 0.96) 0s;
+  -webkit-tap-highlight-color: transparent;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.15) 0px 5px 10px;
+  }
+}
+
+.rounded {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.circular {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  svg {
+    width: 1em;
+    height: 1em;
+  }
+  & + span {
+    margin-left: 5px;
+  }
+  &--btn {
+    border-radius: 100%;
+    width: 1.4em;
+    height: 1.4em;
+    padding: 0;
+    position: relative;
+    .icon {
+      line-height: 0.5em;
+      font-size: 0.5em;
+      vertical-align: middle;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+[class*="btn--"] {
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  &.padded {
+    padding: 8px 20px;
+    min-width: 120px;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.btn {
+  &--primary {
+    background: $color-black;
+    color: $color-white;
+    border: 2px solid $color-black;
+    svg {
+      fill: $color-white;
+    }
+  }
+  &--secondary {
+    background: $color-white;
+    color: $color-black;
+    border: 2px solid $color-black;
+    svg {
+      fill: $color-black;
+    }
+  }
+  &--tertiary {
+    background: $color-gray-60;
+    color: $color-white;
+    border: 2px solid $color-gray-60;
+    svg {
+      fill: $color-white;
+    }
+  }
+}

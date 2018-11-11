@@ -1,0 +1,275 @@
+/*
+    Colors:
+*/
+
+/* Brand Colors */
+$color-black: #333333;
+$color-white: #ffffff;
+
+/* Neutral Colors */
+$color-gray-15: #262626;
+$color-gray-40: #666666;
+$color-gray-60: #999999;
+$color-gray-80: #cccccc;
+$color-gray-90: #e6e6e6;
+$color-gray-96: #f5f5f5;
+
+/* Utility Colors */
+$color-red: #e64552;
+$color-orange: #f5a623;
+$color-yellow: #f2c230;
+$color-green: #41d98d;
+$color-blue: #45bde6;
+
+/*
+    Font Styles:
+*/
+
+/* H1 - Heading font style */
+$font-h-1-heading-font-size: 60px;
+$font-h-1-heading-line-height: 60px;
+$font-h-1-heading-text-align: left;
+$font-h-1-heading-color: #333333;
+$font-h-1-heading-text-transform: uppercase;
+$font-h-1-heading-font-style: normal;
+$font-h-1-heading-font-weight: 800;
+
+@mixin font-h-1-heading () {
+  font-size: $font-h-1-heading-font-size;
+  line-height: $font-h-1-heading-line-height;
+  text-align: $font-h-1-heading-text-align;
+  color: $font-h-1-heading-color;
+  text-transform: $font-h-1-heading-text-transform;
+  font-style: $font-h-1-heading-font-style;
+  font-weight: $font-h-1-heading-font-weight;
+  font-family: $font-h-1-heading-font-family;
+}
+
+/* H2 - Heading font style */
+$font-h-2-heading-font-size: 36px;
+$font-h-2-heading-line-height: 45px;
+$font-h-2-heading-text-align: left;
+$font-h-2-heading-color: #333333;
+$font-h-2-heading-letter-spacing: 1px;
+$font-h-2-heading-text-transform: uppercase;
+$font-h-2-heading-font-style: normal;
+$font-h-2-heading-font-weight: 800;
+
+@mixin font-h-2-heading () {
+  font-size: $font-h-2-heading-font-size;
+  line-height: $font-h-2-heading-line-height;
+  text-align: $font-h-2-heading-text-align;
+  color: $font-h-2-heading-color;
+  letter-spacing: $font-h-2-heading-letter-spacing;
+  text-transform: $font-h-2-heading-text-transform;
+  font-style: $font-h-2-heading-font-style;
+  font-weight: $font-h-2-heading-font-weight;
+  font-family: $font-h-2-heading-font-family;
+}
+
+/* H3 - Heading font style */
+$font-h-3-heading-font-size: 24px;
+$font-h-3-heading-line-height: 36px;
+$font-h-3-heading-text-align: left;
+$font-h-3-heading-color: #333333;
+$font-h-3-heading-letter-spacing: 1px;
+$font-h-3-heading-text-transform: uppercase;
+$font-h-3-heading-font-style: normal;
+$font-h-3-heading-font-weight: bold;
+
+@mixin font-h-3-heading () {
+  font-size: $font-h-3-heading-font-size;
+  line-height: $font-h-3-heading-line-height;
+  text-align: $font-h-3-heading-text-align;
+  color: $font-h-3-heading-color;
+  letter-spacing: $font-h-3-heading-letter-spacing;
+  text-transform: $font-h-3-heading-text-transform;
+  font-style: $font-h-3-heading-font-style;
+  font-weight: $font-h-3-heading-font-weight;
+  font-family: $font-h-3-heading-font-family;
+}
+
+/* H4 - Heading font style */
+$font-h-4-heading-font-size: 18px;
+$font-h-4-heading-line-height: 24px;
+$font-h-4-heading-text-align: left;
+$font-h-4-heading-color: #333333;
+$font-h-4-heading-letter-spacing: 1.5px;
+$font-h-4-heading-text-transform: uppercase;
+$font-h-4-heading-font-style: normal;
+$font-h-4-heading-font-weight: bold;
+
+@mixin font-h-4-heading () {
+  font-size: $font-h-4-heading-font-size;
+  line-height: $font-h-4-heading-line-height;
+  text-align: $font-h-4-heading-text-align;
+  color: $font-h-4-heading-color;
+  letter-spacing: $font-h-4-heading-letter-spacing;
+  text-transform: $font-h-4-heading-text-transform;
+  font-style: $font-h-4-heading-font-style;
+  font-weight: $font-h-4-heading-font-weight;
+  font-family: $font-h-4-heading-font-family;
+}
+
+/* H5 - Heading font style */
+$font-h-5-heading-font-size: 14px;
+$font-h-5-heading-line-height: 21px;
+$font-h-5-heading-text-align: left;
+$font-h-5-heading-color: #333333;
+$font-h-5-heading-letter-spacing: 0.5px;
+$font-h-5-heading-text-transform: uppercase;
+$font-h-5-heading-font-style: normal;
+$font-h-5-heading-font-weight: bold;
+$font-h-5-heading-font-family: SF Pro Text;
+
+@mixin font-h-5-heading () {
+  font-size: $font-h-5-heading-font-size;
+  line-height: $font-h-5-heading-line-height;
+  text-align: $font-h-5-heading-text-align;
+  color: $font-h-5-heading-color;
+  letter-spacing: $font-h-5-heading-letter-spacing;
+  text-transform: $font-h-5-heading-text-transform;
+  font-style: $font-h-5-heading-font-style;
+  font-weight: $font-h-5-heading-font-weight;
+  font-family: $font-h-5-heading-font-family;
+}
+
+/* H6 - Heading font style */
+$font-h-6-heading-font-size: 11px;
+$font-h-6-heading-line-height: 15px;
+$font-h-6-heading-text-align: left;
+$font-h-6-heading-color: #333333;
+$font-h-6-heading-letter-spacing: 0.5px;
+$font-h-6-heading-text-transform: uppercase;
+$font-h-6-heading-font-style: normal;
+$font-h-6-heading-font-weight: bold;
+$font-h-6-heading-font-family: SF Pro Text;
+
+@mixin font-h-6-heading () {
+  font-size: $font-h-6-heading-font-size;
+  line-height: $font-h-6-heading-line-height;
+  text-align: $font-h-6-heading-text-align;
+  color: $font-h-6-heading-color;
+  letter-spacing: $font-h-6-heading-letter-spacing;
+  text-transform: $font-h-6-heading-text-transform;
+  font-style: $font-h-6-heading-font-style;
+  font-weight: $font-h-6-heading-font-weight;
+  font-family: $font-h-6-heading-font-family;
+}
+
+/* P - Body font style */
+$font-p-body-font-size: 14px;
+$font-p-body-line-height: 21px;
+$font-p-body-text-align: left;
+$font-p-body-font-style: normal;
+$font-p-body-font-weight: 400;
+$font-p-body-font-family: SF Pro Text;
+
+@mixin font-p-body () {
+  font-size: $font-p-body-font-size;
+  line-height: $font-p-body-line-height;
+  text-align: $font-p-body-text-align;
+  font-style: $font-p-body-font-style;
+  font-weight: $font-p-body-font-weight;
+  font-family: $font-p-body-font-family;
+}
+
+/* P - Body Android font style */
+$font-p-body-android-font-size: 14px;
+$font-p-body-android-line-height: 21px;
+$font-p-body-android-text-align: left;
+$font-p-body-android-font-style: normal;
+$font-p-body-android-font-weight: 400;
+$font-p-body-android-font-family: Roboto;
+
+@mixin font-p-body-android () {
+  font-size: $font-p-body-android-font-size;
+  line-height: $font-p-body-android-line-height;
+  text-align: $font-p-body-android-text-align;
+  font-style: $font-p-body-android-font-style;
+  font-weight: $font-p-body-android-font-weight;
+  font-family: $font-p-body-android-font-family;
+}
+
+/* Field Label font style */
+$font-field-label-font-size: 11px;
+$font-field-label-line-height: normal;
+$font-field-label-text-align: left;
+$font-field-label-color: #999999;
+$font-field-label-text-transform: uppercase;
+$font-field-label-font-style: normal;
+$font-field-label-font-weight: bold;
+$font-field-label-font-family: SF Pro Text;
+
+@mixin font-field-label () {
+  font-size: $font-field-label-font-size;
+  line-height: $font-field-label-line-height;
+  text-align: $font-field-label-text-align;
+  color: $font-field-label-color;
+  text-transform: $font-field-label-text-transform;
+  font-style: $font-field-label-font-style;
+  font-weight: $font-field-label-font-weight;
+  font-family: $font-field-label-font-family;
+}
+
+/* Button Text font style */
+$font-button-text-font-size: 14px;
+$font-button-text-line-height: 18px;
+$font-button-text-text-align: center;
+$font-button-text-color: #ffffff;
+$font-button-text-font-style: normal;
+$font-button-text-font-weight: bold;
+$font-button-text-font-family: SF Pro Text;
+
+@mixin font-button-text () {
+  font-size: $font-button-text-font-size;
+  line-height: $font-button-text-line-height;
+  text-align: $font-button-text-text-align;
+  color: $font-button-text-color;
+  font-style: $font-button-text-font-style;
+  font-weight: $font-button-text-font-weight;
+  font-family: $font-button-text-font-family;
+}
+
+/* Button Text Large font style */
+$font-button-text-large-font-size: 24px;
+$font-button-text-large-line-height: normal;
+$font-button-text-large-text-align: center;
+$font-button-text-large-color: #ffffff;
+$font-button-text-large-letter-spacing: 1px;
+$font-button-text-large-text-transform: uppercase;
+$font-button-text-large-font-style: normal;
+$font-button-text-large-font-weight: bold;
+
+@mixin font-button-text-large () {
+  font-size: $font-button-text-large-font-size;
+  line-height: $font-button-text-large-line-height;
+  text-align: $font-button-text-large-text-align;
+  color: $font-button-text-large-color;
+  letter-spacing: $font-button-text-large-letter-spacing;
+  text-transform: $font-button-text-large-text-transform;
+  font-style: $font-button-text-large-font-style;
+  font-weight: $font-button-text-large-font-weight;
+  font-family: $font-button-text-large-font-family;
+}
+
+/* Tag Text font style */
+$font-tag-text-font-size: 11px;
+$font-tag-text-line-height: normal;
+$font-tag-text-text-align: left;
+$font-tag-text-color: #ffffff;
+$font-tag-text-text-transform: uppercase;
+$font-tag-text-font-style: normal;
+$font-tag-text-font-weight: bold;
+$font-tag-text-font-family: SF Pro Text;
+
+@mixin font-tag-text () {
+  font-size: $font-tag-text-font-size;
+  line-height: $font-tag-text-line-height;
+  text-align: $font-tag-text-text-align;
+  color: $font-tag-text-color;
+  text-transform: $font-tag-text-text-transform;
+  font-style: $font-tag-text-font-style;
+  font-weight: $font-tag-text-font-weight;
+  font-family: $font-tag-text-font-family;
+}
