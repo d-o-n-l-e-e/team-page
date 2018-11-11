@@ -5,6 +5,10 @@
   "description": "",
   "license": "All rights reserved",
   "main": "./dist/electron/main.js",
+  "keywords": [
+    "Electron",
+    "Vue"
+  ],
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
     "build:dir": "node .electron-vue/build.js && electron-builder --dir",
